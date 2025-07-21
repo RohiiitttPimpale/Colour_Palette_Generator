@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% from "bootstrap5/form.html" import render_form %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colour Palette Generator</title>
+    {{ bootstrap.load_css() }}
+</head>
+<body>
+<h1>Enter </h1>
+{{ render_form(form) }}
+</body>
+</html>

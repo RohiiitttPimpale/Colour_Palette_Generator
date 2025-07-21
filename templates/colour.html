@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colour Palette</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='my.css') }}">
+    {{ bootstrap.load_css() }}
+</head>
+<body>
+<img src="../static/image/{{image}}" width="300" height="300">
+{% for colour in top_10 %}
+<button style="background:rgb{{colour}}" id="full" type="button" class="btn btn-primary">RGB:{{colour}}</button>
+{% endfor %}
+</body>
+</html>
